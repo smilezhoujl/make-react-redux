@@ -1,6 +1,8 @@
 import React , { Component } from 'react'
 import ThemeSwitch from './ThemeSwitch'
-import { connect } from './react-redux'
+import Bottom from './Bottom'
+//import { connect } from './react-redux'
+import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
 
 class Content extends Component {
@@ -30,6 +32,7 @@ class Content extends Component {
           <div>
             <p style={{ color: this.props.themeColor }}>React.js 小书内容</p>
             <ThemeSwitch />
+            <Bottom />
           </div>
         )
     }
